@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <rect width="200" height="100" fill="#000000"/>
+  <!-- Golden L-shaped bracket -->
+  <path d="M 25 15 L 25 85 L 95 85" fill="none" stroke="#F5A623" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M 25 15 L 95 15" fill="none" stroke="#F5A623" stroke-width="8" stroke-linecap="square"/>
+  <!-- LunAI text -->
+  <text x="55" y="62" font-family="Arial, sans-serif" font-size="38" font-weight="300" fill="#FFFFFF" letter-spacing="1">LunAI</text>
+</svg>
