@@ -1,9 +1,39 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Calendar, ShoppingCart, Bot, ArrowRight, Sparkles, ArrowLeft } from "lucide-react";
+import { Calendar, ShoppingCart, Bot, ArrowRight, Sparkles, ArrowLeft, Mic, FileText, Pencil } from "lucide-react";
 import Header from "@/components/Header";
 
 const projects = [
+    {
+        id: 6,
+        title: "PostAI",
+        icon: Pencil,
+        metric: "4-in-1",
+        metricLabel: "Content Engine — One Topic, All Platforms",
+        challenge: "Content creators spend hours writing separate posts for every platform. Without knowing each algorithm, reach stays low — effort goes high.",
+        techStack: ["Claude AI", "n8n", "React", "Supabase", "Antigravity"],
+        link: "/case-study-postai",
+    },
+    {
+        id: 4,
+        title: "The Speaking Portfolio",
+        icon: Mic,
+        metric: "24/7",
+        metricLabel: "Digital Expert Availability",
+        challenge: "Static portfolio sites don't build trust or demonstrate expertise instantly. Potential clients leave when they can't find specific answers quickly.",
+        techStack: ["n8n", "Voice AI", "RAG", "Cloud"],
+        link: "/case-study-4",
+    },
+    {
+        id: 5,
+        title: "AI Invoice Automation",
+        icon: FileText,
+        metric: "0",
+        metricLabel: "Manual Data Entry After Setup",
+        challenge: "Small businesses spend 5-10 hours monthly manually entering invoice data — wrong amounts, wrong accounts, no audit trail.",
+        techStack: ["n8n", "OpenAI", "Bkper", "Gmail", "Apps Script"],
+        link: "/case-study-5",
+    },
     {
         id: 1,
         title: "Voice Appointment Agent",

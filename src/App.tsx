@@ -11,6 +11,7 @@ import AILeadQualificationCaseStudy from "./pages/AILeadQualificationCaseStudy";
 import SpeakingPortfolioCaseStudy from "./pages/SpeakingPortfolioCaseStudy";
 import InvoiceAutomationCaseStudy from "./pages/InvoiceAutomationCaseStudy";
 import AllProjects from "./pages/AllProjects";
+import PostAICaseStudy from "./pages/PostAICaseStudy";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -56,6 +57,7 @@ const App = () => (
             <Route path="/case-study-4" element={<SpeakingPortfolioCaseStudy />} />
             <Route path="/case-study-5" element={<InvoiceAutomationCaseStudy />} />
             <Route path="/all-projects" element={<AllProjects />} />
+            <Route path="/case-study-postai" element={<PostAICaseStudy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

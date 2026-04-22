@@ -1,8 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Calendar, ShoppingCart, Bot, Mic, FileText, ArrowRight, Sparkles } from "lucide-react";
+import { Calendar, ShoppingCart, Bot, Mic, FileText, Pencil, ArrowRight, Sparkles } from "lucide-react";
 
 const projects = [
+  {
+    id: 6,
+    title: "PostAI",
+    icon: Pencil,
+    metric: "4-in-1",
+    metricLabel: "Content Engine — One Topic, All Platforms",
+    challenge: "Content creators spend hours writing separate posts for every platform. Without knowing each algorithm, reach stays low — effort goes high.",
+    techStack: ["Claude AI", "n8n", "React", "Supabase", "Antigravity"],
+    link: "/case-study-postai",
+  },
   {
     id: 4,
     title: "The Speaking Portfolio",
@@ -85,7 +95,7 @@ const ProjectsSection = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {projects.map((project, index) => (
+          {projects.slice(0, 4).map((project, index) => (
             <Link
               key={project.id}
               to={project.link}
@@ -171,10 +181,10 @@ const ProjectsSection = () => {
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up animation-delay-600">
           <Button variant="hero" size="xl" asChild>
-            <a href="/all-projects">
+            <Link to="/all-projects">
               View All Case Studies
               <ArrowRight className="w-5 h-5 ml-2" />
-            </a>
+            </Link>
           </Button>
 
 
